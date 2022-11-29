@@ -21,7 +21,7 @@
 }
 
 header {
-background: url(./imagens/baker8.jpg) no-repeat center center ;
+background: url(./imagens/pexels1.jpg) no-repeat center right ;
 background-size:cover;
 grid-area: header;
 }
@@ -126,7 +126,8 @@ grid-area: footer;
 }
 
 .choose-cake img {
-    width: 19vw;
+    width: 20%;
+    height: 500px;
     
 }
 
@@ -152,6 +153,14 @@ grid-area: footer;
     color: rgb(255, 36, 72);
 }
 
+.cake img {
+margin-bottom: -35px;
+}
+
+.cake p {
+    
+}
+
 .flavours {
     display: flex;
     justify-content: space-around;
@@ -165,16 +174,22 @@ grid-area: footer;
 }
 #title {
     font-family: 'Berkshire Swash', cursive;
-    margin: 0px;
+    margin: 30px 0;
     text-align: center;
 }
+.flavour {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
 .flavour h2 {
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
     font-family: 'Roboto Mono', monospace;
    text-align: justify;
 }
 
 .flavour p {
+    width: 50%;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 12.5px;
@@ -215,18 +230,21 @@ grid-area: footer;
     font-size: 20px;
 }
 .logo img {
-    margin: 10px;
-   width: 2vw;
-   height: 2vh;
+    margin: 20px;
+   width: 50px;
+   height: 50px;
 }
 
 #menu-aberto {
     display: none;
 }
 
+footer {
+    
+}
 
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
 
     
      #menu-aberto {
@@ -266,10 +284,13 @@ grid-area: footer;
      }
 
      .choose-cake img {
-        width: 60%;
+        width: 70%;
+        height: 300px;
        padding: 10px;
      }
-    
+    .menu3 {
+        display: none;
+    }
      .menu4  {
         display: flex;
         flex-wrap: wrap; 
@@ -277,15 +298,14 @@ grid-area: footer;
      }
 
      .cake  {
-        margin: 0;
-        padding: 0;
+        
         width: 100%;
         text-align: center;
      }
      
      .cake p {
-        margin: 0;
-        padding: 0;
+        margin-top: -60px;
+        width: 100%;
      }
      .menu li:hover {
        
@@ -299,10 +319,20 @@ grid-area: footer;
     .flavours img {
         width: 70% ;
     }
-
-    .flavour h2, p {
+ .flavour {
+  text-align: center;
+    width: 55%;
+    height: 600px;
+ }
+    .flavour h2 {
         text-align: center;
-        width: 95%;
+        width: 100%;
+       
+    }
+
+    .flavour p {
+        text-align: center;
+        width: 100%;
     }
 
     .imginsta {
@@ -311,14 +341,19 @@ grid-area: footer;
     }
 
     .imginsta img {
-        width: 80%;
+        padding: 10px;
+        width: 70%;
     }
     .menu4 img, p {
         margin-top: 70px;
         margin-bottom: 70px;
         padding: 3px;
      }
-
+     .logo img {
+        margin: 10px;
+       width: 5vw;
+       height: 30px;
+    }
    
 
 }
